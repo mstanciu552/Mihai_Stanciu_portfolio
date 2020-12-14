@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         "orange-custom": "#f7a55f",
         "pale-blue": "#395671",
+        twitter: "#55ACEE",
+        facebook: "#3B5998",
+        linkedin: "#007AB9",
       },
       spacing: {
         100: "30rem",
