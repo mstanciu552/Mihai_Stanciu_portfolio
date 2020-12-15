@@ -13,6 +13,9 @@ module.exports = {
       },
       spacing: {
         100: "30rem",
+        "2xscreen": "200vh",
+        "1/2xscreen": "150vh",
+        "1.2xscreen": "120vh",
       },
     },
   },
