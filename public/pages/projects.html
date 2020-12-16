@@ -7,9 +7,77 @@
     <link rel="stylesheet" href="../css/tailwind.css" />
     <script defer src="../js/index.js"></script>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
+    <nav class="w-screen h-20 bg-blue-900 flex justify-between">
+      <a
+        class="w-100 sm:w-11/12 md:w-1/3 md:h-full flex items-center justify-center text-lg md:text-2xl text-gray-100 pl-2 md:pl-0 hover:text-orange-custom"
+        href="../../index.html"
+        >Mihai Sorin Stanciu</a
+      >
+      <div class="md:hidden px-10 w-full h-full flex items-center justify-end">
+        <button onclick="openMenu()" id="open-btn" class="block md:hidden">
+          <svg
+            class="w-10 h-10 fill-current text-gray-200"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+        <button onclick="closeMenu()" id="close-btn" class="hidden md:hidden">
+          <svg
+            class="w-10 h-10 fill-current text-gray-200"
+            fill="currentColor"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <nav
+        class="hidden w-1/2 md:flex items-center justify-between text-gray-100 z-10"
+      >
+        <ul class="w-full flex items-center justify-around text-lg">
+          <li class="border-b-2 border-transparent hover:border-orange-custom">
+            <a href="./projects.html">Projects</a>
+          </li>
+          <li class="border-b-2 border-transparent hover:border-orange-custom">
+            <a href="./colab.html">Collaborations</a>
+          </li>
+          <li class="border-b-2 border-transparent hover:border-orange-custom">
+            <a href="./about.html">About me</a>
+          </li>
+        </ul>
+      </nav>
+    </nav>
+    <nav id="menu" class="hidden md:hidden bg-blue-900 h-40">
+      <ul class="sm:w-1/3 h-full flex flex-col justify-evenly items-center">
+        <li class="w-full text-center text-xl text-gray-100">
+          <a href="./projects.html">Projects</a>
+        </li>
+        <li class="w-full text-center text-xl text-gray-100">
+          <a href="./colab.html">Collaborations</a>
+        </li>
+        <li class="w-full text-center text-xl text-gray-100">
+          <a href="./about.html">About me</a>
+        </li>
+      </ul>
+    </nav>
     <!-- Header section -->
-    <nav class="w-screen h-20 bg-blue-900"></nav>
     <header class="w-full h-screen bg-blue-900 relative">
       <div
         class="lg:pl-100 lg:pr-4 lg:pt-10 w-full lg:w-11/12 h-4/5 absolute z-10"

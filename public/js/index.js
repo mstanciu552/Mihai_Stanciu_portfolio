@@ -36,3 +36,23 @@ const moveNext = (id) => {
   nextElement.classList.remove("hidden");
   nextElement.classList.add("flex");
 };
+
+const openMenu = () => {
+  const menu = document.querySelector("#menu");
+  const openBtn = document.querySelector("#open-btn");
+  const closeBtn = document.querySelector("#close-btn");
+
+  menu.classList.remove("hidden");
+  openBtn.classList.add("hidden");
+  closeBtn.classList.remove("hidden");
+};
+
+const closeMenu = () => {
+  const menu = document.querySelector("#menu");
+  const openBtn = document.querySelector("#open-btn");
+  const closeBtn = document.querySelector("#close-btn");
+
+  menu.classList.add("hidden");
+  openBtn.classList.remove("hidden");
+  closeBtn.classList.add("hidden");
+};
